@@ -21,45 +21,37 @@ WARNING:
 -	[`19.0.0.12-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.12/kernel/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.12-full-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.12/full/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-kernel`, `19.0.0.9-kernel-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/kernel/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-kernel-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/kernel/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-kernel-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/kernel/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-kernel-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/kernel/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-webProfile8`, `19.0.0.9-webProfile8-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile8/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-webProfile8-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile8/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-webProfile8-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile8/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-webProfile8-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile8/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-javaee8`, `19.0.0.9-javaee8-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee8/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-javaee8-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee8/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-javaee8-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee8/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-javaee8-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee8/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-microProfile1`, `19.0.0.9-microProfile1-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile1/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-microProfile1-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile1/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-microProfile1-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile1/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-microProfile1-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile1/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-microProfile2`, `19.0.0.9-microProfile2-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile2/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-microProfile2-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile2/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-microProfile2-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile2/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-microProfile2-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile2/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-microProfile3`, `19.0.0.9-microProfile3-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile3/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-microProfile3-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile3/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-microProfile3-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile3/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-microProfile3-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/microProfile3/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-springBoot2`, `19.0.0.9-springBoot2-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot2/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-springBoot2-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot2/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-springBoot2-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot2/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-springBoot2-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot2/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-webProfile7`, `19.0.0.9-webProfile7-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile7/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-webProfile7-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile7/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-webProfile7-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile7/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-webProfile7-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/webProfile7/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-javaee7`, `19.0.0.9-javaee7-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee7/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-javaee7-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee7/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-javaee7-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee7/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-javaee7-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/javaee7/Dockerfile.ubuntu.adoptopenjdk11)
 -	[`19.0.0.9-springBoot1`, `19.0.0.9-springBoot1-java8-ibm`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot1/Dockerfile.ubuntu.ibmjava8)
--	[`19.0.0.9-springBoot1-java8-ibmsfj`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot1/Dockerfile.alpine.ibmsfj8)
 -	[`19.0.0.9-springBoot1-java8-openj9`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot1/Dockerfile.ubuntu.adoptopenjdk8)
 -	[`19.0.0.9-springBoot1-java11`](https://github.com/OpenLiberty/ci.docker/blob/7c7bef891fdf69ec74a2f63cbd1354adb5eb16c7/releases/19.0.0.9/springBoot1/Dockerfile.ubuntu.adoptopenjdk11)
+
+[![s390x/open-liberty build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/open-liberty.svg?label=s390x/open-liberty%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/open-liberty/)
 
 # Quick reference
 
@@ -140,7 +132,7 @@ There are multiple tags available in this repository.
 The `kernel` image contains the Liberty kernel and can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application and then run a built-in script to install the needed features.
 
 ```dockerfile
-FROM open-liberty:kernel
+FROM s390x/open-liberty:kernel
 COPY --chown=1001:0  Sample1.war /config/dropins/
 COPY --chown=1001:0  server.xml /config/
 RUN configure.sh
@@ -175,7 +167,7 @@ When using `volumes`, an application file can be mounted in the `dropins` direct
 ```console
 $ docker run -d -p 80:9080 -p 443:9443 \
 	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
-	    open-liberty:webProfile8
+	    s390x/open-liberty:webProfile8
 ```
 
 When the server is started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
@@ -187,7 +179,7 @@ For greater flexibility over configuration, it is possible to mount an entire se
 ```console
 $ docker run -d -p 80:9080 \
   -v /tmp/DefaultServletEngine:/config \
-  open-liberty:webProfile8
+  s390x/open-liberty:webProfile8
 ```
 
 # Using `springBoot` images
@@ -197,7 +189,7 @@ The `springBoot` images introduce capabilities specific to the support of Spring
 1.	A Spring Boot application JAR deploys to the `dropins/spring` directory within the default server configuration, not the `dropins` directory. Liberty allows one Spring Boot application per server configuration. You can create a Spring Boot application layer over this image by adding the application JAR to the `dropins/spring` directory. In this example we copied `hellospringboot.jar` from `/tmp` to the same directory containing the following Dockerfile.
 
 	```dockerfile
-	FROM open-liberty:springBoot2
+	FROM s390x/open-liberty:springBoot2
 	COPY --chown=1001:0 hellospringboot.jar /config/dropins/spring/
 	```
 
@@ -213,13 +205,13 @@ The `springBoot` images introduce capabilities specific to the support of Spring
 	You can use the `springBootUtility` command to create thin application and library cache layers over a `springBoot` image. The following example uses docker staging to efficiently build an image that deploys a fat Spring Boot application as two layers containing a thin application and a library cache.
 
 	```dockerfile
-	FROM open-liberty:springBoot2 as staging
+	FROM s390x/open-liberty:springBoot2 as staging
 	COPY --chown=1001:0 hellospringboot.jar /staging/myFatApp.jar
 	RUN springBootUtility thin \
 	   --sourceAppPath=/staging/myFatApp.jar \
 	   --targetThinAppPath=/staging/myThinApp.jar \
 	   --targetLibCachePath=/staging/lib.index.cache
-	FROM open-liberty:springBoot2
+	FROM s390x/open-liberty:springBoot2
 	COPY --from=staging /staging/lib.index.cache /lib.index.cache
 	COPY --from=staging /staging/myThinApp.jar /config/dropins/spring/myThinApp.jar
 	```
@@ -257,7 +249,7 @@ Or, create a named data volume container that exposes a volume at the location o
 
 ```console
 docker run -v /opt/ol/wlp//output/.classCache \
-    --name classcache open-liberty true
+    --name classcache s390x/open-liberty true
 ```
 
 Then, run the Open Liberty image with the volumes from the data volume container classcache mounted as follows:
@@ -273,7 +265,7 @@ Liberty writes to two different directories when running: `/opt/ol/wlp//output` 
 ```console
 docker run -d -p 80:9080 -p 443:9443 \
     --tmpfs /opt/ol/wlp//output --tmpfs /logs -v /config --read-only \
-    open-liberty:webProfile8
+    s390x/open-liberty:webProfile8
 ```
 
 # Relationship between Open Liberty and WebSphere Liberty
