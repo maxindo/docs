@@ -18,6 +18,8 @@ WARNING:
 
 -	[`2.4.9`, `2.4`, `2`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/022483549bdf709aef768fa26afa107b6f06cbb3/Dockerfile)
 
+[![amd64/rocket.chat build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/rocket.chat.svg?label=amd64/rocket.chat%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/rocket.chat/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -66,7 +68,7 @@ $ docker exec -ti db mongo --eval "printjson(rs.initiate())"
 Then start Rocket.Chat linked to this mongo instance:
 
 ```console
-$ docker run --name rocketchat --link db --env MONGO_OPLOG_URL=mongodb://db:27017/local -d rocket.chat
+$ docker run --name rocketchat --link db --env MONGO_OPLOG_URL=mongodb://db:27017/local -d amd64/rocket.chat
 ```
 
 This will start a Rocket.Chat instance listening on the default Meteor port of 3000 on the container.
@@ -74,7 +76,7 @@ This will start a Rocket.Chat instance listening on the default Meteor port of 3
 If you'd like to be able to access the instance directly at standard port on the host machine:
 
 ```console
-$ docker run --name rocketchat -p 80:3000 --link db --env ROOT_URL=http://localhost --env MONGO_OPLOG_URL=mongodb://db:27017/local -d rocket.chat
+$ docker run --name rocketchat -p 80:3000 --link db --env ROOT_URL=http://localhost --env MONGO_OPLOG_URL=mongodb://db:27017/local -d amd64/rocket.chat
 ```
 
 Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROOT_URL` with your own domain name if you are hosting at your own domain.
@@ -82,7 +84,7 @@ Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROO
 If you're using a third party Mongo provider, or working with Kubernetes, you need to override the `MONGO_URL` environment variable:
 
 ```console
-$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb --env MONGO_OPLOG_URL=mongodb://mymongourl:27017/local -d rocket.chat
+$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb --env MONGO_OPLOG_URL=mongodb://mymongourl:27017/local -d amd64/rocket.chat
 ```
 
 ### Check our docs
