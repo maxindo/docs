@@ -16,11 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20200219`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/cfb552709a84c4732eedf2ff89ac2e46f62ba4f8/bionic/Dockerfile)
--	[`19.10`, `eoan-20200207`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/cfb552709a84c4732eedf2ff89ac2e46f62ba4f8/eoan/Dockerfile)
--	[`20.04`, `focal-20200115`, `focal`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/cfb552709a84c4732eedf2ff89ac2e46f62ba4f8/focal/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/cfb552709a84c4732eedf2ff89ac2e46f62ba4f8/trusty/Dockerfile)
--	[`16.04`, `xenial-20200212`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/cfb552709a84c4732eedf2ff89ac2e46f62ba4f8/xenial/Dockerfile)
+-	[`18.04`, `bionic-20200219`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5dfc98855869d3bd4ad3d076c93031f4dc006fb4/bionic/Dockerfile)
+-	[`19.10`, `eoan-20200207`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5dfc98855869d3bd4ad3d076c93031f4dc006fb4/eoan/Dockerfile)
+-	[`20.04`, `focal-20200115`, `focal`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5dfc98855869d3bd4ad3d076c93031f4dc006fb4/focal/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5dfc98855869d3bd4ad3d076c93031f4dc006fb4/trusty/Dockerfile)
+-	[`16.04`, `xenial-20200212`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/5dfc98855869d3bd4ad3d076c93031f4dc006fb4/xenial/Dockerfile)
+
+[![arm64v8/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/ubuntu.svg?label=arm64v8/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/ubuntu/)
 
 # Quick reference
 
@@ -61,9 +63,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm64v8/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm64v8/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm64v8/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 

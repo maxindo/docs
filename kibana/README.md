@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.0`](https://github.com/docker-library/kibana/blob/bd52317f514e1f50d5e8aed9dd581fad7e0648dc/7/Dockerfile)
--	[`6.8.6`](https://github.com/docker-library/kibana/blob/581e38e19e48fcae9ef2bf58afb20ffebe9da082/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm64v8` ARCHITECTURE
+
+[![arm64v8/kibana build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/kibana.svg?label=arm64v8/kibana%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/kibana/)
 
 # Quick reference
 

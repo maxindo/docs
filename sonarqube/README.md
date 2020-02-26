@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.9.2-community`, `7.9-community`, `latest`, `lts`](https://github.com/SonarSource/docker-sonarqube/blob/8fb14312c4780e6aca7d95d3fcc5ae3022cb7276/7/community/Dockerfile)
--	[`8.1-community-beta`, `8-community-beta`, `community-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8fb14312c4780e6aca7d95d3fcc5ae3022cb7276/8/community/Dockerfile)
--	[`8.1-developer-beta`, `8-developer-beta`, `developer-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8fb14312c4780e6aca7d95d3fcc5ae3022cb7276/8/developer/Dockerfile)
--	[`8.1-enterprise-beta`, `8-enterprise-beta`, `enterprise-beta`](https://github.com/SonarSource/docker-sonarqube/blob/8fb14312c4780e6aca7d95d3fcc5ae3022cb7276/8/enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm64v8` ARCHITECTURE
+
+[![arm64v8/sonarqube build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/sonarqube.svg?label=arm64v8/sonarqube%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/sonarqube/)
 
 # Quick reference
 
@@ -76,7 +75,7 @@ ulimit -u 4096
 Start the server by running:
 
 ```console
-$ docker run -d --name sonarqube -p 9000:9000 sonarqube
+$ docker run -d --name sonarqube -p 9000:9000 arm64v8/sonarqube
 ```
 
 By default you can login as `admin` with password `admin`, see [authentication documentation](https://docs.sonarqube.org/latest/instance-administration/security/).
@@ -125,7 +124,7 @@ Follow these steps for your first installation:
 	    -v sonarqube_extensions:/opt/sonarqube/extensions \
 	    -v sonarqube_logs:/opt/sonarqube/logs \
 	    -v sonarqube_data:/opt/sonarqube/data \
-	    sonarqube
+	    arm64v8/sonarqube
 	```
 
 2.	Configure sonar.properties to configure the database JDBC URL. Templates are available for every supported database. Just uncomment and configure the template you need. Please note that due to [SONAR-12501](https://jira.sonarsource.com/browse/SONAR-12501), providing `sonar.jdbc.username` and `sonar.jdbc.password` in `sonar.properties` is not working, and you will need to explicitly define theses values in the docker run command with the `-e` flag.
@@ -148,7 +147,7 @@ Follow these steps for your first installation:
 	    -v sonarqube_extensions:/opt/sonarqube/extensions \
 	    -v sonarqube_logs:/opt/sonarqube/logs \
 	    -v sonarqube_data:/opt/sonarqube/data \
-	    sonarqube
+	    arm64v8/sonarqube
 	```
 
 ### SonarQube 8.x first installation
@@ -169,7 +168,7 @@ Follow these steps for your first installation:
 	 -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
 	 -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	 -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	 sonarqube:community-beta --init
+	 arm64v8/sonarqube:community-beta --init
 	```
 
 3.	Configure sonar.properties to configure the database settings. Templates are available for every supported database. Just uncomment and configure the template you need and comment out the lines dedicated to H2:
@@ -191,7 +190,7 @@ Follow these steps for your first installation:
 	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
 	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	    sonarqube:community-beta
+	    arm64v8/sonarqube:community-beta
 	```
 
 ## Upgrade SonarQube
@@ -227,7 +226,7 @@ Follow these steps to upgrade SonarQube:
 	    -v $SONARQUBE_HOME/conf:/opt/sonarqube/conf \
 	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	    sonarqube:community-beta --init  
+	    arm64v8/sonarqube:community-beta --init  
 	```
 
 4.	Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/) for information on:
@@ -240,8 +239,8 @@ Follow these steps to upgrade SonarQube:
 5.	Stop and remove the sonarqube container (a restart is not enough as the environment variables are only evaluated during the first run, not during a restart):
 
 	```console
-	$ docker stop sonarqube
-	$ docker rm sonarqube
+	$ docker stop arm64v8/sonarqube
+	$ docker rm arm64v8/sonarqube
 	```
 
 6.	Run docker:
@@ -252,7 +251,7 @@ Follow these steps to upgrade SonarQube:
 	    -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
 	    -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
 	    -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-	    sonarqube:community-beta
+	    arm64v8/sonarqube:community-beta
 	```
 
 7.	Browse to `http://yourSonarQubeServerURL/setup` and follow the setup instructions.
@@ -275,7 +274,7 @@ $ docker run -d --name sonarqube \
     -v $SONARQUBE_HOME/extensions:/opt/sonarqube/extensions \
     -v $SONARQUBE_HOME/logs:/opt/sonarqube/logs \
     -v $SONARQUBE_HOME/data:/opt/sonarqube/data \
-    sonarqube
+    arm64v8/sonarqube
 ```
 
 Use of the environment variables `SONARQUBE_JDBC_USERNAME`, `SONARQUBE_JDBC_PASSWORD`, and `SONARQUBE_JDBC_URL` is deprecated and will stop working in future releases.
@@ -303,7 +302,7 @@ $ docker run -ti sonarqube-custom
 Starting from SonarQube 7.8, SonarQube stops gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 arm64v8/sonarqube
 ```
 
 ## Administration
