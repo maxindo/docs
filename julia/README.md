@@ -16,36 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
-(See ["What's the difference between 'Shared' and 'Simple' tags?" in the FAQ](https://github.com/docker-library/faq#whats-the-difference-between-shared-and-simple-tags).)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
-## Simple Tags
-
--	[`1.4.0-rc1-buster`, `1.4.0-buster`, `1.4-buster`, `1.4-rc-buster`, `rc-buster`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.4-rc/buster/Dockerfile)
--	[`1.4.0-rc1-windowsservercore-ltsc2016`, `1.4.0-windowsservercore-ltsc2016`, `1.4-windowsservercore-ltsc2016`, `1.4-rc-windowsservercore-ltsc2016`, `rc-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.4-rc/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`1.4.0-rc1-windowsservercore-1809`, `1.4.0-windowsservercore-1809`, `1.4-windowsservercore-1809`, `1.4-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.4-rc/windows/windowsservercore-1809/Dockerfile)
--	[`1.3.1-buster`, `1.3-buster`, `1-buster`, `buster`](https://github.com/docker-library/julia/blob/decfcd314ded05c1afc5202ec423a31e4f959635/1.3/buster/Dockerfile)
--	[`1.3.1-stretch`, `1.3-stretch`, `1-stretch`, `stretch`](https://github.com/docker-library/julia/blob/decfcd314ded05c1afc5202ec423a31e4f959635/1.3/stretch/Dockerfile)
--	[`1.3.1-windowsservercore-ltsc2016`, `1.3-windowsservercore-ltsc2016`, `1-windowsservercore-ltsc2016`, `windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.3/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`1.3.1-windowsservercore-1809`, `1.3-windowsservercore-1809`, `1-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.3/windows/windowsservercore-1809/Dockerfile)
--	[`1.0.5-buster`, `1.0-buster`](https://github.com/docker-library/julia/blob/4c770401df0b946da5cf61150bedb05280b218a6/1.0/buster/Dockerfile)
--	[`1.0.5-stretch`, `1.0-stretch`](https://github.com/docker-library/julia/blob/4c770401df0b946da5cf61150bedb05280b218a6/1.0/stretch/Dockerfile)
--	[`1.0.5-windowsservercore-ltsc2016`, `1.0-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.0/windows/windowsservercore-ltsc2016/Dockerfile)
--	[`1.0.5-windowsservercore-1809`, `1.0-windowsservercore-1809`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.0/windows/windowsservercore-1809/Dockerfile)
-
-## Shared Tags
-
--	`1.4.0-rc1`, `1.4.0`, `1.4`, `1.4-rc`, `rc`:
-	-	[`1.4.0-rc1-buster`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.4-rc/buster/Dockerfile)
-	-	[`1.4.0-rc1-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.4-rc/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.4.0-rc1-windowsservercore-1809`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.4-rc/windows/windowsservercore-1809/Dockerfile)
--	`1.3.1`, `1.3`, `1`, `latest`:
-	-	[`1.3.1-buster`](https://github.com/docker-library/julia/blob/decfcd314ded05c1afc5202ec423a31e4f959635/1.3/buster/Dockerfile)
-	-	[`1.3.1-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.3/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.3.1-windowsservercore-1809`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.3/windows/windowsservercore-1809/Dockerfile)
--	`1.0.5`, `1.0`:
-	-	[`1.0.5-buster`](https://github.com/docker-library/julia/blob/4c770401df0b946da5cf61150bedb05280b218a6/1.0/buster/Dockerfile)
-	-	[`1.0.5-windowsservercore-ltsc2016`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.0/windows/windowsservercore-ltsc2016/Dockerfile)
-	-	[`1.0.5-windowsservercore-1809`](https://github.com/docker-library/julia/blob/fc3c116c6fe19f870091df6843ed63a37f6c291b/1.0/windows/windowsservercore-1809/Dockerfile)
+[![arm32v6/julia build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/julia.svg?label=arm32v6/julia%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/julia/)
 
 # Quick reference
 
@@ -87,33 +60,14 @@ Julia is a high-level, high-performance dynamic programming language for technic
 Starting the Julia REPL is as easy as the following:
 
 ```console
-$ docker run -it --rm julia
+$ docker run -it --rm arm32v6/julia
 ```
 
 ## Run Julia script from your local directory inside container
 
 ```console
-$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2
+$ docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp arm32v6/julia julia script.jl arg1 arg2
 ```
-
-# Image Variants
-
-The `julia` images come in many flavors, each designed for a specific use case.
-
-## `julia:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like buster or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `julia:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 
