@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.2`, `latest`](https://github.com/hashicorp/docker-vault/blob/df3e3b2fbb4028f72493734a8ce4349a82a3d1f6/0.X/Dockerfile)
--	[`1.4.0-beta1`](https://github.com/hashicorp/docker-vault/blob/c41def1ef606d1953b4e898b1d3fc44e1a9d5aa3/0.X/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/vault build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/vault.svg?label=winamd64/vault%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/vault/)
 
 # Quick reference
 
@@ -75,7 +76,7 @@ The container will attempt to lock memory to prevent sensitive values from being
 ## Running Vault for Development
 
 ```console
-$ docker run --cap-add=IPC_LOCK -d --name=dev-vault vault
+$ docker run --cap-add=IPC_LOCK -d --name=dev-vault winamd64/vault
 ```
 
 This runs a completely in-memory Vault server, which is useful for development but should not be used in production.
@@ -88,13 +89,13 @@ When running in development mode, two additional options can be set via environm
 As an example:
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' vault
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:1234' winamd64/vault
 ```
 
 ## Running Vault in Server Mode
 
 ```console
-$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' vault server
+$ docker run --cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}, "default_lease_ttl": "168h", "max_lease_ttl": "720h"}' winamd64/vault server
 ```
 
 This runs a Vault server using the `file` storage backend at path `/vault/file`, with a default secret lease duration of one week and a maximum of 30 days.

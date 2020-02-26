@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6.0`](https://github.com/docker-library/elasticsearch/blob/3ee0cc9aaf25ebb7fba9e9e1c8f4f94b77f85366/7/Dockerfile)
--	[`6.8.6`](https://github.com/docker-library/elasticsearch/blob/4c04ee848e9183d70c6109e9325d6a40520d334d/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/elasticsearch build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/elasticsearch.svg?label=winamd64/elasticsearch%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/elasticsearch/)
 
 # Quick reference
 
